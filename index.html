@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preload" href="alex-knight-Ys-DBJeX0nE-unsplash.jpg" as="image" type="image/jpg" />
+    </head>
+    <body>
+        <img src="alex-knight-Ys-DBJeX0nE-unsplash.jpg" />
+        <canvas width="1920" height="1080" style="width: 960px;"></canvas>
+        <script src="isolate-highlights.js"></script>
+        <script>
+            var canv = document.querySelector("canvas");
+            var ctx = canv.getContext("2d");
+            var img = document.querySelector("img");
+            ctx.drawImage(img, 0, 0);
+            img.style.display = "none";
+            isolateHighlights(ctx, 69);
+        </script>
+    </body>
+</html>
