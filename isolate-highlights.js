@@ -1,3 +1,13 @@
+// ISOLATE HIGHLIGHTS
+//
+// Written by yikuans
+//
+// Isolates brightest
+// pixels of a canvas
+//
+// In other words, it
+// finds light source
+
 function isolateHighlights(ctx, threshold) {
     var threshFunc = function(val, thresh) {
         return 255 / (255 - thresh) * (val - 255) + 255;
